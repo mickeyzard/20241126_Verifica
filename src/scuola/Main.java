@@ -15,7 +15,12 @@ public class Main {
      */
     public static void main(String[] args) {
         creaStudente studente1 = new creaStudente();
-        creaDocente docente1 = new creaDocente();
+        studente1.visualizzaTutto();
+        creaDocente docente2 = new creaDocente();
+        docente2.visualizzaTutto();
+        
+        
+
     }
     
 }

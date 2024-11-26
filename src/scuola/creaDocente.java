@@ -17,10 +17,10 @@ public class creaDocente {
     private String conferma;
     
     public creaDocente(){
+        System.out.println("");
         System.out.println("-------------------------");
-        System.out.println("Creazione docente: ");
+        System.out.println("Creazione docente nuovo: ");
         docente.setCognomeMateria();
-        visualizzaTutto();
     }
     
     

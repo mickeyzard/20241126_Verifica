@@ -59,6 +59,7 @@ public class Studente {
     
     public void visualizzaStudente(){
         System.out.println("");
+        System.out.println("Studente ID-");
         String myStudente = "Cognome: " + cognome + "\nNome: " + nome;
         System.out.println("-------------------------");
         System.out.println(myStudente);
@@ -66,6 +67,7 @@ public class Studente {
     public void visualizzaVoti(){
          contaStampa=1;
         for(int i = 0; i<=conta-1; i++){
+            System.out.println("Voti Studente-");
             System.out.println("-------------------------");
             System.out.println("Voto "+ contaStampa + ": " + voti[i]);
             System.out.println("Materia: " + materie[i]);
@@ -73,12 +75,18 @@ public class Studente {
             contaStampa++;
             
         }
+
     }
+    
+        public float getMedia(){
+            return media;
+        }      
+  
     public void media(){
         if (conta == 0){
             System.out.println("Studente non ha ancora voti;");
         } else {
-                System.out.println("Media dei voti e': " + media);
+
         }
         int somma = 0;
         for (int i = 0; i <=conta-1; i++){
@@ -88,6 +96,7 @@ public class Studente {
         if (media < 6){
             System.out.println("Lo studente ha il debito!");
         }
+
     }
     
     

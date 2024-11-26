@@ -16,19 +16,21 @@ public class creaStudente  {
     Scanner scan = new Scanner(System.in);
     Studente studente = new Studente();
     private String conferma;
+    private int conta;
     
     public creaStudente(){
+        System.out.println("");
         System.out.println("-------------------------");
-        System.out.println("Creazione studente: ");
+        System.out.println("Creazione studente nuovo: ");
         studente.setCognomeNome();
         studente.setVoto();
-        visualizzaTutto();
     }
     
-    public void visualizzaAlunno(){
+    private void visualizzaAlunno(){
         studente.visualizzaStudente();
         studente.visualizzaVoti();
         studente.media();
+        System.out.println("Media dei voti e': " + studente.getMedia());
     }
     
     public void visualizzaTutto(){
